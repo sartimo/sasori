@@ -1,0 +1,45 @@
+[package]
+name = "your_project_name"
+version = "0.1.0"
+authors = ["Your Name <your.email@example.com>"]
+edition = "2018"
+
+[dependencies]
+c2rust-asm-casts = "0.18.0"
+c2rust-bitfields = "0.18.0"
+libc = "0.2"
+# Add your dependencies here
+# For example:
+# rand = "0.8.3"
+
+[dev-dependencies]
+# Add development dependencies here
+# For example:
+# rand = "0.8.3"
+
+[build-dependencies]
+# Add build dependencies here
+# For example:
+# build-essential = "0.1.0"
+
+# Additional configuration options can go here
+# For example, you can specify features or default features
+# Or enable certain Cargo features:
+# [features]
+# default = ["feature1", "feature2"]
+
+[lib]
+name = "your_library_name"
+path = "sasori.rs"
+
+[[bin]]
+name = "sasori"
+path = "sasori.rs" 
+
+[[bin]]
+name = "servertor"
+path = "servertor.rs"
+
+[[bin]]
+name = "lighthide"
+path = "lighthide.rs"
